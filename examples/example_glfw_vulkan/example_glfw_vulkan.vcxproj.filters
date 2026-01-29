@@ -8,6 +8,15 @@
       <UniqueIdentifier>{f18ab499-84e1-499f-8eff-9754361e0e52}</UniqueIdentifier>
       <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
     </Filter>
+    <Filter Include="Libs">
+      <UniqueIdentifier>{c5f578dc-4501-4fc1-8d4b-df14d1c3ff13}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Libs\Debug">
+      <UniqueIdentifier>{1eba02b3-3ee9-47af-8732-1e5dee42ceb6}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Libs\Debug\x64">
+      <UniqueIdentifier>{c862b8f6-17b7-462e-a151-1ae14d10be35}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="main.cpp">
@@ -60,5 +69,10 @@
     <None Include="..\..\misc\debuggers\imgui.natstepfilter">
       <Filter>imgui</Filter>
     </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Library Include="C:\Tools\VulkanSDK\1.4.335.0\Lib\vulkan-1.lib">
+      <Filter>Libs\Debug\x64</Filter>
+    </Library>
   </ItemGroup>
 </Project>
