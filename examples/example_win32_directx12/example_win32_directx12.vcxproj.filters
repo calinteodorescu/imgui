@@ -1,65 +1,83 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <ItemGroup>
-    <Filter Include="imgui">
-      <UniqueIdentifier>{fb3d294f-51ec-478e-a627-25831c80fefd}</UniqueIdentifier>
-    </Filter>
     <Filter Include="sources">
       <UniqueIdentifier>{4f33ddea-9910-456d-b868-4267eb3c2b19}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="00 imgui.core">
+      <UniqueIdentifier>{fb3d294f-51ec-478e-a627-25831c80fefd}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="00 imgui.core\00 Resource Files">
+      <UniqueIdentifier>{74eb2036-8651-4d45-a888-74e414e70cc9}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="00 imgui.core\00 Resource Files\Debugger">
+      <UniqueIdentifier>{38f05970-77f5-41f9-8b83-aa9275496b50}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="sources\01 Header Files">
+      <UniqueIdentifier>{924cbd39-2a67-48fa-b82f-bc0bd4dc00b5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="sources\02 Source Files">
+      <UniqueIdentifier>{ecaa32f0-627c-474a-8584-4f3748bcc5d6}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="00 imgui.core\01 Header Files">
+      <UniqueIdentifier>{11949800-6aa1-4601-b429-668728b5fb38}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="00 imgui.core\02 Source Files">
+      <UniqueIdentifier>{4dff5e27-40ee-4305-80a1-9b8784fe0dfe}</UniqueIdentifier>
     </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="..\..\imconfig.h">
-      <Filter>imgui</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\imgui.h">
-      <Filter>imgui</Filter>
+      <Filter>00 imgui.core\01 Header Files</Filter>
     </ClInclude>
     <ClInclude Include="..\..\imgui_internal.h">
-      <Filter>imgui</Filter>
+      <Filter>00 imgui.core\01 Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\imgui.h">
+      <Filter>00 imgui.core\01 Header Files</Filter>
     </ClInclude>
     <ClInclude Include="..\..\backends\imgui_impl_dx12.h">
-      <Filter>sources</Filter>
+      <Filter>sources\01 Header Files</Filter>
     </ClInclude>
     <ClInclude Include="..\..\backends\imgui_impl_win32.h">
-      <Filter>sources</Filter>
+      <Filter>sources\01 Header Files</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="..\..\imgui.cpp">
-      <Filter>imgui</Filter>
-    </ClCompile>
     <ClCompile Include="main.cpp">
       <Filter>sources</Filter>
     </ClCompile>
+    <ClCompile Include="..\..\imgui.cpp">
+      <Filter>00 imgui.core\02 Source Files</Filter>
+    </ClCompile>
     <ClCompile Include="..\..\imgui_demo.cpp">
-      <Filter>imgui</Filter>
+      <Filter>00 imgui.core\02 Source Files</Filter>
     </ClCompile>
     <ClCompile Include="..\..\imgui_draw.cpp">
-      <Filter>imgui</Filter>
-    </ClCompile>
-    <ClCompile Include="..\..\backends\imgui_impl_dx12.cpp">
-      <Filter>sources</Filter>
-    </ClCompile>
-    <ClCompile Include="..\..\backends\imgui_impl_win32.cpp">
-      <Filter>sources</Filter>
+      <Filter>00 imgui.core\02 Source Files</Filter>
     </ClCompile>
     <ClCompile Include="..\..\imgui_tables.cpp">
-      <Filter>imgui</Filter>
+      <Filter>00 imgui.core\02 Source Files</Filter>
     </ClCompile>
     <ClCompile Include="..\..\imgui_widgets.cpp">
-      <Filter>imgui</Filter>
+      <Filter>00 imgui.core\02 Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\backends\imgui_impl_dx12.cpp">
+      <Filter>sources\02 Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\backends\imgui_impl_win32.cpp">
+      <Filter>sources\02 Source Files</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <None Include="..\README.txt" />
     <None Include="..\..\misc\debuggers\imgui.natstepfilter">
-      <Filter>imgui</Filter>
+      <Filter>00 imgui.core\00 Resource Files\Debugger</Filter>
     </None>
   </ItemGroup>
   <ItemGroup>
     <Natvis Include="..\..\misc\debuggers\imgui.natvis">
-      <Filter>imgui</Filter>
+      <Filter>00 imgui.core\00 Resource Files\Debugger</Filter>
     </Natvis>
   </ItemGroup>
 </Project>
