@@ -56,5 +56,19 @@
     <Filter Include="sources">
       <UniqueIdentifier>{ef84458b-039a-4902-8455-4e33df5a8578}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Libs">
+      <UniqueIdentifier>{5a18ab2d-f99a-4022-9de1-569766178464}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Libs\Debug">
+      <UniqueIdentifier>{b3e795b5-0534-4aa8-b380-5b9fb80ffd38}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Libs\Release">
+      <UniqueIdentifier>{cd30e841-9b42-480d-9395-bedf69da8b5c}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <Library Include="..\..\..\SDL\VisualC\x64\Debug\SDL3.lib">
+      <Filter>Libs\Debug</Filter>
+    </Library>
   </ItemGroup>
 </Project>
